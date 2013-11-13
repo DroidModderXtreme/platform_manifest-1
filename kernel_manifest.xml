@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="kernel/sony/u8500" name="sony-kernel-u8500" remote="cm" revision="jellybean" />
+  <project path="kernel/sony/u8500" name="CyanogenMod/sony-kernel-u8500" remote="cm" revision="jellybean" />
