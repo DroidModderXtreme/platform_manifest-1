@@ -8,6 +8,9 @@
   <remote  name="aokp"
            fetch="https://github.com/"
            review="gerrit.aokp.co" />
+           
+  <remote name="private"
+           fetch="ssh://git@github.com" />
 
   <remote  name="cm"
            fetch="https://github.com/" />
@@ -28,7 +31,7 @@
   <project path="bionic" name="AOKP/bionic" remote="aokp" revision="kitkat" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="Gava97/bootable_recovery" revision="kitkat" groups="pdk" remote="github" />
   <project path="cts" name="platform/cts" groups="cts"/>
   <project path="dalvik" name="AOKP/dalvik" remote="aokp" revision="kitkat" />
   <project path="developers/build" name="platform/developers/build" />
@@ -292,15 +295,15 @@
   <project path="external/yaffs2" name="AOKP/external_yaffs2" remote="aokp" revision="kitkat" groups="pdk" />
   <project path="external/zlib" name="AOKP/external_zlib" remote="aokp" revision="kitkat" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="AOKP/frameworks_av" remote="aokp" revision="kitkat" groups="pdk" />
-  <project path="frameworks/base" name="AOKP/frameworks_base" remote="aokp" revision="kitkat" />
+  <project path="frameworks/av" name="Gava97/frameworks_av" revision="kitkat" groups="pdk" remote="github" />
+  <project path="frameworks/base" name="Gava97/frameworks_base" revision="kitkat" groups="pdk" remote="github" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="AOKP/frameworks_native" remote="aokp" revision="kitkat" groups="pdk" />
+  <project path="frameworks/native" name="Gava97/frameworks_native" revision="kitkat" groups="pdk" remote="github" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker"/>
@@ -325,8 +328,8 @@
   <project path="hardware/broadcom/libbt" name="AOKP/hardware_broadcom_libbt" remote="aokp" revision="kitkat" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="AOKP/hardware_broadcom_wlan" remote="aokp" revision="kitkat" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="AOKP/hardware_libhardware" remote="aokp" revision="kitkat" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="AOKP/hardware_libhardware_legacy" remote="aokp" revision="kitkat" groups="pdk" />
+  <project path="hardware/libhardware" name="Gava97/hardware_libhardware" revision="kitkat" groups="pdk" remote="github" />
+  <project path="hardware/libhardware_legacy" name="Gava97/hardware_libhardware_legacy" revision="kitkat" groups="pdk" remote="github" />
   <project path="hardware/qcom/audio" name="AOKP/hardware_qcom_audio" remote="aokp" revision="kitkat" groups="qcom" />
   <project path="hardware/qcom/audio-caf" name="AOKP/hardware_qcom_audio-caf" remote="aokp" revision="kitkat" groups="caf" />
   <project path="hardware/qcom/bt" name="AOKP/hardware_qcom_bt" remote="aokp" revision="kitkat" groups="qcom" />
@@ -482,7 +485,7 @@
   <project path="prebuilts/runtime" name="platform/prebuilts/runtime" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" />
-  <project path="system/core" name="AOKP/system_core" remote="aokp" revision="kitkat" groups="pdk" />
+  <project path="system/core" name="Gava97/system_core" revision="kitkat" groups="pdk" remote="github" />
   <project path="system/extras" name="AOKP/system_extras" remote="aokp" revision="kitkat" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="AOKP/system_netd" remote="aokp" revision="kitkat" groups="pdk" />
@@ -519,4 +522,12 @@
   <!--<project path="packages/wallpapers/SwagPapers" name="AOKP/packages_wallpapers_SwagPapers_v2" remote="aokp" revision="kitkat" /> -->
 
   <project path="platform_manifest" name="AOKP/platform_manifest" remote="aokp" revision="kitkat" />
+
+  <project path="kernel/sony/u8500" name="Legacy-Xperia/android_kernel_xperia_u8500" remote="github" revision="jb-dev" />
+  <project path="vendor/sony/nypon" name="percy-g2/vendor_nypon_4.3" remote="github" revision="master" />
+  <project path="vendor/sony/kumquat" name="XperiaNovathor/proprietary_vendor_sony" remote="github" revision="master" />
+  <project path="device/sony/lotus" name="munjeni/aosp_4.3_device_sony_lotus" remote="github" revision="cm-11.0" />
+  <project path="device/sony/kumquat" name="Legacy-Xperia/android_device_sony_kumquat" remote="github" revision="kk-dev" />
+  <project path="device/sony/nypon" name="Legacy-Xperia/android_device_sony_nypon" remote="github" revision="kk-dev" />
+  <project path="hardware/semc" name="percy-g2/aosp_4.3_hardware_semc" remote="github" revision="master" />
 </manifest>
